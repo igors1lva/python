@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ Titulo }}</title>
+    <!--Url_for vincula a pasta static que possui o arquivo style.css-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<main class="card">
+<h1>{{ Titulo }}</h1>
+<!--Strong é para ficar forte na tela o elemento dentro da chave-->
+<p><strong>Aluno:</strong> {{  usuario.nome  }}</p>
+<p><strong>Curso:</strong> {{  usuario.curso  }}</p>
+<p><strong>Nota final:</strong> {{  usuario.nota  }}</p>
+
+<div class="tag {{'Aprovado' if resultado == 'Aprovado' else 'Reprovado'}}">
+    Status: {{ resultado }} 
+</div>
+</main>
+<body>
+    
+</body>
+</html>
