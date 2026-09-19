@@ -34,10 +34,10 @@ body {
 }
 
 .aprovado {
-    background-color: #000f00;
+    background-color: #2ae604;
     color:#0d0e0d;
 }
 .reprovado {
-    background-color: #09e609;
+    background-color: #eb0b0b;
     color:#111111;
 }

@@ -4,8 +4,8 @@ app = Flask(__name__)
 def home():
     #dados que serao! calculados python
     titulo_pagina = "Face Page"
-    aluno = {"nome": "João", "curso": "Python", "nota": 8.5}
-    status = "Aprovado" if aluno["nota"] >= 5 else "Reprovado"
+    aluno = {"nome": "João", "curso": "Python", "nota": 4.5}
+    status = "aprovado" if aluno["nota"] >= 5 else "reprovado"
     #passando dados para o template HTML
     return render_template("index.html", 
                            titulo=titulo_pagina, 
