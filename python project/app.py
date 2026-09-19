@@ -1,5 +1,5 @@
-from Flask import flask, render_template
-app = Flask(__name__)
+from flask import flask, render_template
+app = flask(__name__)
 @app.route("/")
 def home():
     #dados que serao! calculados python
