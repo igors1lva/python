@@ -7,16 +7,17 @@
     <!--Url_for vincula a pasta static que possui o arquivo style.css-->
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
-<main class="card">
+<main class="card"><center>
 <h1>{{ Titulo }}</h1>
 <!--Strong é para ficar forte na tela o elemento dentro da chave-->
 <p><strong>Aluno:</strong> {{  usuario.nome  }}</p>
 <p><strong>Curso:</strong> {{  usuario.curso  }}</p>
 <p><strong>Nota final:</strong> {{  usuario.nota  }}</p>
 
-<div class="tag {{'Aprovado' if resultado == 'Aprovado' else 'Reprovado'}}">
+<div class="tag {{'aprovado' if resultado == 'aprovado' else 'reprovado'}}">
     status: {{ resultado }} 
 </div>
+</center>
 </main>
 <body>
     
