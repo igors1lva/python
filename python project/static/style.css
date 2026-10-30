@@ -33,11 +33,11 @@ body {
     font-weight: bold;
 }
 
-.aprovado {
+.Aprovado {
     background-color: #2ae604;
     color:#0d0e0d;
 }
-.reprovado {
+.Reprovado {
     background-color: #eb0b0b;
     color:#111111;
 }
